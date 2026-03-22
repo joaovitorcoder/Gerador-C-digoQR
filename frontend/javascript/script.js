@@ -10,7 +10,7 @@ function criar_QR(){
     qrcodeDiv.innerHTML = `<h5 style="color: white;">Impossível a criação de códigoQR</h5>`
   }else{
     new QRCode(qrcodeDiv, {
-      text: `https://${input.value}.com`,
+      text: input.value,
       width: 150,
       height: 150,
       colorDark: "#ffffff", // cor do QRcode
